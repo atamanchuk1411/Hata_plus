@@ -33,33 +33,32 @@ a {
 }
 
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body{
     font-family: Arial;
-    cursor: pointer;
     padding-top: 55px;
 }
 
 header{
-    background-color: #1f1f56;
-    padding: 18px 0;
     position: fixed;
-    width: 100%;
     top: 0;
     left: 0;
+    padding: 18px 0;
+    width: 100%;
+    background-color: #1f1f56;
 }
 
 sup{
-    font-style: 12px;
+    font-size: 12px;
 }
 
 h1{
     font-size: 30px;
-    color: #24242b;
     padding-bottom: 17px;
+    color: #24242b;
 }
 
 li{
@@ -148,8 +147,8 @@ aside > ul{
 
 .tel_2{
     font-size: 18px;
-    line-height: 1.3em;
     font-weight: bold;
+    line-height: 1.3em;
 }
 
 .social_media{
@@ -162,25 +161,24 @@ aside > ul{
 
 .cta{
     display: inline-block;
+    font-weight: bold;
     padding: 12px 27px;
+    line-height: 1.5em;
     border-radius: 25px;
     border: 2px solid #fd8300;
-    line-height: 1.5em;
-    color: #25252c;
-    font-weight: bold;
 }
 
 .offer{
-    background: url(../img/Rectangle.png)  no-repeat center/cover;
-    padding: 79px 0 59px;
     margin-bottom: 42px;
+    padding: 79px 0 59px;
+    background: url(../img/Rectangle.png)  no-repeat center/cover;
 }
 
 .propose{
     font-size: 30px;
+    font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: 700;
     text-align: center;
 }
 
@@ -191,8 +189,8 @@ aside > ul{
 }
 
 .price{
-    text-align: center;
     color: #fd8300;
+    text-align: center;
 }
 
 .numbers{
@@ -204,8 +202,8 @@ aside > ul{
 .grn{
     display: inline;
     font-size: 24px;
-    line-height: 1em;
     font-weight: bold;
+    line-height: 1em;
 }
 
 .main_text{
@@ -223,27 +221,27 @@ aside > ul{
 
 .details{
     font-size: 14px;
-    line-height: 1.7em;
     font-weight: bold;
-    color: #fd8300;
     padding-top: 3px;
+    color: #fd8300;
+    line-height: 1.7em;
 }
 
 .kinds{
     font-weight: 400;
     padding: 16px 15px 13px;
-    line-height: 1.5em;
     color: #ffffff;
+    line-height: 1.5em;
     background-color: #1f1f56;
     border-radius: 3px;
 }
 
 .list_aside a{
     display: block;
-    padding: 17px 15px 14px;
     font-size: 14px;
-    line-height: 1.7em;
+    padding: 17px 15px 14px;
     color: #25252c;
+    line-height: 1.7em;
     transition: 0.5s;
 }
 
@@ -272,24 +270,24 @@ aside > ul{
 }
 
 .sold1:hover {
-    background-color: #cecedd;
     display: block;
+    background-color: #cecedd;
 }
 
 .booked1:hover {
-    background-color: #cecedd;
     display: block;
+    background-color: #cecedd;
 }
 
 .procces1:hover {
-    background-color: #cecedd;
     display: block;
+    background-color: #cecedd;
 }
 
 .list_footer{
     font-size: 14px;
-    line-height: 1.9em;
     gap: 11px;
+    line-height: 1.9em;
 }
 
 .list_footer > li > a:hover{
@@ -297,10 +295,10 @@ aside > ul{
 }
 
 .construction{
-    background-color: #dcdce6;
     font-size: 13px;
-    line-height: 1.4em;
-    color: #9999a6;
-    text-align: center;
     padding: 17px 0 15px;
+    color: #9999a6;
+    line-height: 1.4em;
+    text-align: center;
+    background-color: #dcdce6;
 }
