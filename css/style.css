@@ -1,0 +1,300 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Medium.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Medium.woff') format('woff'),
+        url('../fonts/RobotoSlab-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Bold.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Bold.woff') format('woff'),
+        url('../fonts/RobotoSlab-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Regular.woff2') format('woff2'),
+        url('../fonts/RobotoSlab-Regular.woff') format('woff'),
+        url('../fonts/RobotoSlab-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+a {
+    cursor: url(../img/cursor.cur), default;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial;
+    cursor: pointer;
+}
+
+header{
+    background-color: #1f1f56;
+    padding: 18px 0;
+}
+
+sup{
+    font-style: 12px;
+}
+
+h1{
+    font-size: 30px;
+    color: #24242b;
+    padding-bottom: 17px;
+}
+
+li{
+    list-style: none;
+}
+
+li > a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: #ededf5;
+    padding: 41px 0 30px;
+}
+
+aside{
+    min-width: 220px;
+}
+
+aside > ul{
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #25252c;
+}
+
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.nostyle{
+    text-decoration: none;
+}
+
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.grey{
+    color: #b1b1d2;
+}
+
+.six{
+    color: #666666;
+}
+
+.black{
+    color: #25252c;
+}
+
+.white{
+    color: #ffffff;
+}
+
+.b_color{
+    background-color: #e4e4ec;
+}
+
+.rs{
+    font-family: "Roboto Slab";
+}
+
+.list_header > li:hover > a{
+    color: #fd8300;
+}
+
+.nav_header{
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1.7em;
+}
+
+.nav_header > ul{
+    gap: 27px;
+}
+
+.social_nav > ul{
+    gap: 26px;
+}
+
+.header_2{
+    padding: 29px 0;
+}
+
+.tel_2{
+    font-size: 18px;
+    line-height: 1.3em;
+    font-weight: bold;
+}
+
+.social_media{
+    line-height: 1.5em;
+}
+
+.phone2{
+    padding-left: 22px;
+}
+
+.cta{
+    display: inline-block;
+    padding: 12px 27px;
+    border-radius: 25px;
+    border: 2px solid #fd8300;
+    line-height: 1.5em;
+    color: #25252c;
+    font-weight: bold;
+}
+
+.offer{
+    background: url(../img/Rectangle.png)  no-repeat center/cover;
+    padding: 79px 0 59px;
+    margin-bottom: 42px;
+}
+
+.propose{
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.choice{
+    font-size: 14px;
+    line-height: 1.7em;
+    text-align: center;
+}
+
+.price{
+    text-align: center;
+    color: #fd8300;
+}
+
+.numbers{
+    display: inline;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.grn{
+    display: inline;
+    font-size: 24px;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+.main_text{
+    padding-bottom: 36px;
+}
+
+.paragraph{
+    font-size: 14px;
+    line-height: 1.7em;
+}
+
+.paragraph > p{
+    padding-bottom: 20px;
+}
+
+.details{
+    font-size: 14px;
+    line-height: 1.7em;
+    font-weight: bold;
+    color: #fd8300;
+    padding-top: 3px;
+}
+
+.kinds{
+    font-weight: 400;
+    padding: 16px 15px 13px;
+    line-height: 1.5em;
+    color: #ffffff;
+    background-color: #1f1f56;
+    border-radius: 3px;
+}
+
+.list_aside a{
+    display: block;
+    padding: 17px 15px 14px;
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #25252c;
+    transition: 0.5s;
+}
+
+.list_aside > li{
+    border-bottom: 1px solid #cecedd;
+}
+
+.show{
+    display: none;
+}
+
+.show > a{
+    text-decoration: none;
+}
+
+.list_aside > li:hover > a{
+    background-color: #fd8300;
+}
+
+.list_aside > li:hover > a{
+    color: #ffffff;
+}
+
+.entertaiment:hover > .show{
+    display: block;
+}
+
+.sold1:hover {
+    background-color: #cecedd;
+    display: block;
+}
+
+.booked1:hover {
+    background-color: #cecedd;
+    display: block;
+}
+
+.procces1:hover {
+    background-color: #cecedd;
+    display: block;
+}
+
+.list_footer{
+    font-size: 14px;
+    line-height: 1.9em;
+    gap: 11px;
+}
+
+.list_footer > li > a:hover{
+    color: #fd8300;
+}
+
+.construction{
+    background-color: #dcdce6;
+    font-size: 13px;
+    line-height: 1.4em;
+    color: #9999a6;
+    text-align: center;
+    padding: 17px 0 15px;
+}
