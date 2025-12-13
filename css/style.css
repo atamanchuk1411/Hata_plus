@@ -49,6 +49,7 @@ header{
     padding: 18px 0;
     width: 100%;
     background-color: #1f1f56;
+    z-index: 1000;
 }
 
 sup{
@@ -228,21 +229,47 @@ aside > ul{
 }
 
 .kinds{
+    font-size: 16px;
     font-weight: 400;
-    padding: 16px 15px 13px;
+    padding: 10px 15px;
     color: #ffffff;
     line-height: 1.5em;
     background-color: #1f1f56;
-    border-radius: 3px;
+    border-radius: 3px 3px 0 0;
+}
+
+.list_aside > li > a{
+    position: relative;
 }
 
 .list_aside a{
     display: block;
     font-size: 14px;
-    padding: 17px 15px 14px;
+    padding: 10px 15px;
     color: #25252c;
     line-height: 1.7em;
     transition: 0.5s;
+}
+
+.list_aside > li > a:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+    transition: .5s;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.list_aside > li:hover > a:after {
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    transform: translateY(-50%) rotate(45deg);
+
 }
 
 .list_aside > li{
