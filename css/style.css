@@ -30,6 +30,12 @@
 
 a {
     cursor: url(../img/cursor.cur), default;
+    transition: .5s;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #fd8300;
 }
 
 *{
@@ -52,10 +58,6 @@ header{
     z-index: 1000;
 }
 
-sup{
-    font-size: 12px;
-}
-
 h1{
     font-size: 30px;
     padding-bottom: 17px;
@@ -64,10 +66,6 @@ h1{
 
 li{
     list-style: none;
-}
-
-li > a{
-    text-decoration: none;
 }
 
 footer{
@@ -89,10 +87,6 @@ aside > ul{
 .wrapper{
     max-width: 960px;
     margin: 0 auto;
-}
-
-.nostyle{
-    text-decoration: none;
 }
 
 .flex_between{
@@ -124,10 +118,6 @@ aside > ul{
     font-family: "Roboto Slab";
 }
 
-.list_header > li:hover > a{
-    color: #fd8300;
-}
-
 .nav_header{
     font-size: 14px;
     letter-spacing: 2px;
@@ -142,11 +132,20 @@ aside > ul{
     gap: 26px;
 }
 
+.list_social svg{
+    fill: #fff;
+    transition: .5s;
+}
+
+.list_social li:hover svg{
+    fill: #fd8300;
+}
+
 .header_2{
     padding: 29px 0;
 }
 
-.tel_2{
+.tel{
     font-size: 18px;
     font-weight: bold;
     line-height: 1.3em;
@@ -156,8 +155,12 @@ aside > ul{
     line-height: 1.5em;
 }
 
-.phone2{
+.phone{
     padding-left: 22px;
+}
+
+.email{
+    text-decoration: underline;
 }
 
 .cta{
@@ -170,7 +173,6 @@ aside > ul{
 }
 
 .offer{
-    margin-bottom: 42px;
     padding: 79px 0 59px;
     background: url(../img/Rectangle.png)  no-repeat center/cover;
 }
@@ -207,8 +209,19 @@ aside > ul{
     line-height: 1em;
 }
 
+.offer sup{
+    font-size: 12px;
+}
+
+.main_block{
+    display: flex;
+    gap: 28px;
+    padding: 37px 0 47px;
+}
+
 .main_text{
-    padding-bottom: 36px;
+    padding: 0 42px 36px 0;
+    border-bottom: 1px solid #e4e4ec;
 }
 
 .paragraph{
@@ -224,8 +237,39 @@ aside > ul{
     font-size: 14px;
     font-weight: bold;
     padding-top: 3px;
-    color: #fd8300;
     line-height: 1.7em;
+}
+
+.popular{
+    font-size: 24px;
+    font-weight: 400;
+    padding: 31px 0 24px;
+    color: #24242b;
+}
+
+.projects sup{
+    font-size: 9px;
+}
+
+.projects a{
+    font-size: 14px;
+    line-height: 1.7em;
+    color: #1f1f56;
+    font-weight: bold;
+}
+
+.projects a:hover{
+    text-decoration: underline;
+}
+
+.projects picture{
+    padding-bottom: 12px;
+}
+
+.dt1 p, .dt2 p, .dt3 p{
+    font-size: 13px;
+    line-height: 1.4em;
+    color: #9999a6;
 }
 
 .kinds{
@@ -280,10 +324,6 @@ aside > ul{
     display: none;
 }
 
-.show > a{
-    text-decoration: none;
-}
-
 .list_aside > li:hover > a{
     background-color: #fd8300;
 }
@@ -317,8 +357,8 @@ aside > ul{
     line-height: 1.9em;
 }
 
-.list_footer > li > a:hover{
-    color: #fd8300;
+.list_footer a:hover{
+    text-decoration: underline;
 }
 
 .construction{
