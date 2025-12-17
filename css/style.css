@@ -184,7 +184,7 @@ aside > ul{
 }
 
 .offer{
-    padding: 79px 0 59px;
+    padding: 58px 0 43px;
     background: url(../img/Rectangle.png)  no-repeat center/cover;
 }
 
@@ -225,7 +225,7 @@ aside > ul{
 }
 
 .main_text{
-    padding-bottom: 36px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #e4e4ec;
 }
 
@@ -235,7 +235,7 @@ aside > ul{
 }
 
 .paragraph > p{
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .details{
