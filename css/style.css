@@ -90,6 +90,11 @@ aside > ul{
     margin: 0 auto;
 }
 
+.align_items{
+    display: flex;
+    align-items: center;
+}
+
 .flex_between{
     display: flex;
     justify-content: space-between;
@@ -150,6 +155,11 @@ aside > ul{
     font-size: 18px;
     font-weight: bold;
     line-height: 1.3em;
+}
+
+.border{
+    border-right: 2px solid #e4e4ec;
+    padding-right: 40px;
 }
 
 .social_media{
@@ -329,6 +339,11 @@ aside > ul{
 
 .show{
     display: none;
+}
+
+.show a{
+    padding-left: 29px;
+    color: #666666;
 }
 
 .list_aside > li:hover > a{
