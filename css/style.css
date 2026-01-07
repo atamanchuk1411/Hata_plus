@@ -34,6 +34,10 @@ a {
     text-decoration: none;
 }
 
+html{
+    font-size: .8px;
+}
+
 a:hover{
     color: #fd8300;
 }
@@ -45,14 +49,14 @@ a:hover{
 
 body{
     font-family: Arial;
-    padding-top: 55px;
+    padding-top: 55rem;
 }
 
 header{
     position: fixed;
     top: 0;
     left: 0;
-    padding: 18px 0;
+    padding: 18rem 0;
     width: 100%;
     background-color: #1f1f56;
     z-index: 1000;
@@ -60,13 +64,14 @@ header{
 
 main{
     display: flex;
-    gap: 28px;
-    padding: 37px 0 47px;
+    flex-wrap: wrap;
+    gap: 28rem;
+    padding: 37rem 0 47rem;
 }
 
 h1{
-    font-size: 30px;
-    padding-bottom: 17px;
+    font-size: 30rem;
+    padding-bottom: 17rem;
     color: #24242b;
 }
 
@@ -76,18 +81,20 @@ li{
 
 footer{
     background-color: #ededf5;
-    padding: 41px 0 30px;
+    padding: 41rem 0 30rem;
 }
 
 aside > ul{
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #25252c;
 }
 
 .wrapper{
-    max-width: 960px;
+    width: 100%;
+    max-width: 960rem;
     margin: 0 auto;
+    padding: 0 15rem;
 }
 
 .align_items{
@@ -125,17 +132,19 @@ aside > ul{
 }
 
 .nav_header{
-    font-size: 14px;
-    letter-spacing: 2px;
+    font-size: 14rem;
+    letter-spacing: 2rem;
     line-height: 1.7em;
 }
 
-.nav_header > ul{
-    gap: 27px;
+.list_header{
+    flex-direction: column;
+    gap: 10rem;
 }
 
-.social_nav > ul{
-    gap: 26px;
+.list_social{
+    flex-direction: column;
+    gap: 26rem;
 }
 
 .list_social svg{
@@ -148,26 +157,31 @@ aside > ul{
 }
 
 .header_2{
-    padding: 29px 0;
+    padding: 160rem 0 29rem;
+}
+
+.header_2 div{
+    flex-wrap: wrap;
 }
 
 .tel{
-    font-size: 18px;
+    font-size: 18rem;
     font-weight: bold;
     line-height: 1.3em;
 }
 
 .border{
-    border-right: 2px solid #e4e4ec;
-    padding-right: 40px;
+    border-right: 2rem solid #e4e4ec;
+    padding-right: 40rem;
 }
 
 .social_media{
+    font-size: 16rem;
     line-height: 1.5em;
 }
 
 .phone{
-    padding-left: 22px;
+    padding-left: 26rem;
 }
 
 .email{
@@ -177,27 +191,28 @@ aside > ul{
 .cta{
     display: inline-block;
     font-weight: bold;
-    padding: 12px 27px;
+    padding: 12rem 27rem;
+    font-size: 16rem;
     line-height: 1.5em;
-    border-radius: 25px;
-    border: 2px solid #fd8300;
+    border-radius: 25rem;
+    border: 2rem solid #fd8300;
 }
 
 .offer{
-    padding: 58px 0 43px;
+    padding: 58rem 0 43rem;
     background: url(../img/Rectangle.png)  no-repeat center/cover;
 }
 
 .propose{
-    font-size: 30px;
+    font-size: 30rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 2rem;
     text-transform: uppercase;
     text-align: center;
 }
 
 .choice{
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     text-align: center;
 }
@@ -209,39 +224,39 @@ aside > ul{
 
 .numbers{
     display: inline;
-    font-size: 40px;
+    font-size: 40rem;
     font-weight: bold;
 }
 
 .grn{
     display: inline;
-    font-size: 24px;
+    font-size: 24rem;
     font-weight: bold;
     line-height: 1em;
 }
 
 .offer sup{
-    font-size: 12px;
+    font-size: 12rem;
 }
 
 .main_text{
-    padding-bottom: 25px;
-    border-bottom: 1px solid #e4e4ec;
+    padding-bottom: 25rem;
+    border-bottom: 1rem solid #e4e4ec;
 }
 
 .paragraph{
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
 }
 
 .paragraph > p{
-    padding-bottom: 15px;
+    padding-bottom: 15rem;
 }
 
 .details{
-    font-size: 14px;
+    font-size: 14rem;
     font-weight: bold;
-    padding-top: 3px;
+    padding-top: 3rem;
     line-height: 1.7em;
     transition: .5s;
 }
@@ -251,17 +266,23 @@ aside > ul{
 }
 
 .popular{
-    font-size: 24px;
-    padding: 31px 0 24px;
+    font-size: 24rem;
+    padding: 31rem 0 24rem;
     color: #24242b;
 }
 
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28rem;
+}
+
 .projects sup{
-    font-size: 9px;
+    font-size: 9rem;
 }
 
 .projects a{
-    font-size: 14px;
+    font-size: 14rem;
     line-height: 1.7em;
     color: #1f1f56;
     font-weight: bold;
@@ -272,30 +293,30 @@ aside > ul{
 }
 
 .projects picture{
-    padding-bottom: 12px;
+    padding-bottom: 12rem;
 }
 
 .dt1 p, .dt2 p, .dt3 p{
-    font-size: 13px;
+    font-size: 13rem;
     line-height: 1.4em;
     color: #9999a6;
 }
 
 .nav_aside{
     position: sticky;
-    top: 55px;
+    top: 55rem;
     left: 0;
-    min-width: 220px;
+    min-width: 220rem;
 }
 
 .kinds{
-    font-size: 16px;
+    font-size: 16rem;
     font-weight: 400;
-    padding: 10px 15px;
+    padding: 10rem 15rem;
     color: #ffffff;
     line-height: 1.5em;
     background-color: #1f1f56;
-    border-radius: 3px 3px 0 0;
+    border-radius: 3rem 3rem 0 0;
 }
 
 .list_aside > li > a{
@@ -304,8 +325,8 @@ aside > ul{
 
 .list_aside a{
     display: block;
-    font-size: 14px;
-    padding: 10px 15px;
+    font-size: 14rem;
+    padding: 10rem 15rem;
     color: #25252c;
     line-height: 1.7em;
     transition: 0.5s;
@@ -315,12 +336,12 @@ aside > ul{
     content: "";
     position: absolute;
     top: 50%;
-    right: 15px;
+    right: 15rem;
     display: inline-block;
-    width: 8px;
-    height: 8px;
-    border-right: 1px solid #666;
-    border-bottom: 1px solid #666;
+    width: 8rem;
+    height: 8rem;
+    border-right: 1rem solid #666;
+    border-bottom: 1rem solid #666;
     transition: .5s;
     transform: translateY(-50%) rotate(-45deg);
 }
@@ -333,7 +354,7 @@ aside > ul{
 }
 
 .list_aside > li{
-    border-bottom: 1px solid #cecedd;
+    border-bottom: 1rem solid #cecedd;
 }
 
 .show{
@@ -341,7 +362,7 @@ aside > ul{
 }
 
 .show a{
-    padding-left: 29px;
+    padding-left: 29rem;
     color: #666666;
 }
 
@@ -373,12 +394,12 @@ aside > ul{
 }
 
 .ready_houses{
-    border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3rem 3rem;
 }
 
 .list_footer{
-    font-size: 14px;
-    gap: 11px;
+    font-size: 14rem;
+    gap: 11rem;
     line-height: 1.9em;
 }
 
@@ -387,10 +408,68 @@ aside > ul{
 }
 
 .construction{
-    font-size: 13px;
-    padding: 17px 0 15px;
+    font-size: 13rem;
+    padding: 17rem 0 15rem;
     color: #9999a6;
     line-height: 1.4em;
     text-align: center;
     background-color: #dcdce6;
+}
+
+@media screen and (max-width: 425px) {
+    .header_2 div{
+        flex-direction: column;
+        gap: 10rem;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .lists_footer{
+        flex-direction: column;
+    }
+
+    .footer_phone{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 0.93px;;
+    }
+
+    .projects{
+        flex-wrap: nowrap;
+    }
+    
+    .list_header{
+        flex-direction: row;
+        gap: 27rem;
+    }
+
+    .list_social{
+        flex-direction: row;
+    }
+
+    .header_2{
+        padding-top: 29rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main{
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    html {
+        font-size: 1px;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+    html {
+        font-size: 1.5px;
+    }
 }
