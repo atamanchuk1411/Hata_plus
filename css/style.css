@@ -484,6 +484,7 @@ aside > ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 15rem;
 }
 
 .construction{
@@ -532,7 +533,7 @@ aside > ul{
     padding-right: 28rem;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 370px) {
     .footer_inside{
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -563,13 +564,17 @@ aside > ul{
         ". logo ."
         "tel social cta";
     }
-}
 
-@media screen and (min-width: 850px) {
     .footer_inside{
         grid-template-columns: repeat(4, auto);
         grid-template-areas:
         "list1 list2 tel2 social2";
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -601,10 +606,6 @@ aside > ul{
 
     .list_header li{
         padding: 0;
-    }
-
-    .projects {
-        grid-template-columns: repeat(3, 1fr);
     }
 }
 
