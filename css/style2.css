@@ -68,7 +68,7 @@ li{
 
 table{
     width: 100%;
-    min-width: 960rem;
+    min-width: 960px;
     overflow: hidden;
     border-radius: 3rem;
     border-collapse: collapse;
@@ -187,6 +187,22 @@ footer{
     display: block;
 }
 
+.our_houses{
+    position: relative;
+}
+
+.submenu, .subsubmenu{
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+.submenu:before{
+    content: "";
+    display: block;
+    position: absolute;
+}
+
 .social_nav{
     padding-right: 28rem;
 }
@@ -268,13 +284,17 @@ footer{
 }
 
 .table_container{
-    padding-bottom: 34rem;
+    padding: 0 15rem 34rem 0;
     border-bottom: 1rem solid #e4e4ec;
 }
 
 .subtable_container{
     overflow-x: scroll;
     margin-right: 28rem;
+}
+
+.top{
+    border-top: none;
 }
 
 .name{
@@ -288,22 +308,24 @@ footer{
     border-right: none;
 }
 
-.table_container > h2{
+.bottom{
+    border-bottom: none;
+}
+
+.table_container > h1{
     padding: 40rem 0 22rem;
     font-size: 24rem;
     line-height: 1em;
     color: #24242b;
-    font-weight: 600;
 }
 
 .every_cottage{
-    padding-right: 28rem;
     font-size: 14rem;
     line-height: 1.7em;
 }
 
 .favour{
-    padding: 0 28rem 27rem 0;
+    padding-bottom: 27rem;
     font-size: 14rem;
     line-height: 1.7em;
 }
@@ -319,7 +341,7 @@ footer{
 }
 
 .time2{
-    padding: 0 28rem 24rem 0;
+    padding-bottom: 24rem;
     font-size: 13rem;
     line-height: 1.6em;
 }
