@@ -80,7 +80,7 @@ tbody tr:hover td{
 }
 
 th{
-    padding: 5rem 0;
+    padding: 10rem 0;
     font-size: 14rem;
     line-height: 1.7em;
     color: #fff;
@@ -275,6 +275,17 @@ footer{
 .subtable_container{
     overflow-x: scroll;
     margin-right: 28rem;
+}
+
+.name{
+    padding-left: 19rem;
+    border-left: none;
+}
+
+.price{
+    text-align: right;
+    padding-right: 19rem;
+    border-right: none;
 }
 
 .table_container > h2{
