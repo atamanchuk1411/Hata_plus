@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Hata_plus</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Our_houses</title>
+    <link rel="stylesheet" href="css/style2.css">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=0.1, maximum-scale=2.0, minimum-scale=1.0">
 </head>
-
 <body>
     <div class="black_background" id="black"></div>
     <header>
@@ -16,9 +14,9 @@
                 <nav class="nav_header align_items">
                     <ul class="list_header" id="menu">
                         <li class="cancel" id="cancel"><a href="#">x</a></li>
-                        <li><a class="grey" href="#">Головна</a></li>
+                        <li><a class="grey" href="../index.html">Головна</a></li>
                         <li><a class="grey" href="#">Про компанію</a></li>
-                        <li><a class="grey" href="../houses.html">Наші будівлі</a></li>
+                        <li><a class="grey" href="#">Наші будівлі</a></li>
                         <li><a class="grey" href="#">Акції</a></li>
                         <li><a class="grey" href="#">Контакти</a></li>
                     </ul>
@@ -94,87 +92,128 @@
             </p>
         </div>
     </div>
-    <div class="offer center">
-        <div class="text">
-            <h2 class="propose rs white">Пропозиція місяця</h2>
-            <p class="choice white">Ми пропонуємо великий вибір котеджів “під ключ” за самими низькими цінами!</p>
-            <div class="price">
-                <p class="numbers">5999</p>
-                <p class="grn">грн / м<sup>2</sup></p>
+    <main class="wrapper">
+        <section class="table_container">
+            <h2 class="rs">Ціни на послуги тимчасового проживання</h2>
+            <p class="every_cottage six">Кожен котедж оснащений комфортабельними меблями, супутниковим ТБ, душем, туалетом, холодильником, Wi-Fi-зоною.</p>
+            <p class="favour six">Послуга може бути надана кожному з наших гостей, незалежно від терміну проживання в готелі та категорії обраного номера.</p>
+            <div class="subtable_container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="name" rowspan="2">Назва котеджу</th>
+                            <th colspan="3">Характеристики будинків</th>
+                            <th rowspan="2">Ціна</th>
+                        </tr>
+                        <tr>
+                            <th>Загальна площа м.кв.</th>
+                            <th>Кількість кімнат</th>
+                            <th>Гараж</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="name">Hamilton Paradise</td>
+                            <td>392</td>
+                            <td>5</td>
+                            <td>2</td>
+                            <td>45 000 $</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Montreal Hourse House</td>
+                            <td>295</td>
+                            <td>3</td>
+                            <td>1</td>
+                            <td>29 750 $</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Edmenton</td>
+                            <td>338</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>53 200 $</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Calgary Skyliner</td>
+                            <td>249</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>31 000 $</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Quebec Enterprices</td>
+                            <td>392</td>
+                            <td>4</td>
+                            <td>2</td>
+                            <td>110 000 $</td>
+                        </tr>
+                        <tr>
+                            <td class="name">Alberta Maria</td>
+                            <td>349</td>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>67 500 $</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
-    </div>
-    <main class="wrapper flex_between">
-        <div class="main_block">
-            <section class="main_text">
-                <h1 class="rs">Компанія “Хата Плюс”</h1>
-                <div class="paragraph six">
-                    <p>Напевно кожен з нас не раз думав про те, щоб купити будинок котедж і насолоджуватися життям в гармонії з природою. Дійсно, для багатьох жителів мегаполісу заміська нерухомість під містом стала справжньою віддушиною і порятунком від сумній життя в багатоповерхівках спальних районів.</p>
-                    <p>Крім цього, заміські котеджі “Хата Плюс” від забудовника — це найбільш вигідна цінова пропозиція по співвідношенню площа / вартість, оскільки у вартість домоволодіння входить також земельна ділянка, на якому можна не тільки посадити сад, але облаштувати зону відпочинку, спорудити сауну, поставити альтанку і барбекю.</p>
-                </div>
-                <p><a class="details black" href="#">Детальніше про нас</a></p>
-            </section>
-            <section>
-                <h2 class="popular rs">Популярні проекти</h2>
-                <div class="projects">
-                    <div class="project1">
-                        <picture class="logo">
-                            <source srcset="img/house1.webp" type="image/webp">
-                            <img src="img/house1.png" alt="big beige cottage with two floors">
-                        </picture>
-                        <p><a href="#">EDMONTON (338 м<sup>2</sup>)</a></p>
-                        <div class="dt1">
-                            <p>Загальна площа будови: 312 м<sup>2</sup></p>
-                            <p>Кількість спалень: 4</p>
-                            <p>Гараж: 2 авто</p>
-                        </div>
-                    </div>
-                    <div class="project2">
-                        <picture class="logo">
-                            <source srcset="img/house2.webp" type="image/webp">
-                            <img src="img/house2.png" alt="big light cottage with two floors and strange shape">
-                        </picture>
-                        <p><a href="#">MONTREAL (332 м<sup>2</sup>)</a></p>
-                        <div class="dt2">
-                            <p>Загальна площа будови: 290 м<sup>2</sup></p>
-                            <p>Кількість спалень: 3</p>
-                            <p>Гараж: 2 авто</p>
-                        </div>
-                    </div>
-                    <div class="project3">
-                        <picture class="logo">
-                            <source srcset="img/house3.webp" type="image/webp">
-                            <img src="img/house3.png" alt="big brown cottage with two floors">
-                        </picture>
-                        <p><a href="#">CALGARY (294 м<sup>2</sup>)</a></p>
-                        <div class="dt3">
-                            <p>Загальна площа будови: 272 м<sup>2</sup></p>
-                            <p>Кількість спалень: 3</p>
-                            <p>Гараж: 2 авто</p>
-                        </div>
+            <p class="time six">Час заселення з 14-00, виїзд до 12-00.</p>
+            <p class="time2 six">Можлива погодинна оренда котеджу (мінімальний час оренди - 5 днів).</p>
+            <a class="black" href="#">Ознайомитись з правилами проживання</a>
+        </section>
+        <section class="houses">
+            <h2 class="popular rs">Популярні проекти</h2>
+            <div class="projects">
+                <div class="project1">
+                    <picture>
+                        <source srcset="img/house1.webp" type="image/webp">
+                        <img src="img/house1.png" alt="big beige cottage with two floors">
+                    </picture>
+                    <p><a href="#">EDMONTON (338 м<sup>2</sup>)</a></p>
+                    <div class="dt1">
+                        <p>Загальна площа будови: 312 м<sup>2</sup></p>
+                        <p>Кількість спалень: 4</p>
+                        <p>Гараж: 2 авто</p>
                     </div>
                 </div>
-            </section>
-        </div>
-        <aside>
-            <nav class="nav_aside">
-                <h2 class="kinds rs">Категорії проектів</h2>
-                <ul class="list_aside">
-                    <li class="b_color"><a href="#">Генеральний план</a></li>
-                    <li class="b_color entertaiment"><a href="#">Навколишнє середовище</a>
-                        <ul class="show">
-                            <li><a class="b_color sold1" href="#">Продані</a></li>
-                            <li><a class="b_color booked1" href="#">Заброньованні</a></li>
-                            <li><a class="b_color procces1" href="#">В процесі будівництва</a></li>
-                        </ul>
-                    </li>
-                    <li class="b_color"><a href="#">Умови придбання</a></li>
-                    <li class="b_color"><a href="#">Загородні котеджі</a></li>
-                    <li class="b_color"><a href="#">Інфраструктура</a></li>
-                    <li class="b_color ready_houses"><a href="#">Готові будинки</a></li>
-                </ul>
-            </nav>
-        </aside>
+                <div class="project2">
+                    <picture>
+                        <source srcset="img/house2.webp" type="image/webp">
+                        <img src="img/house2.png" alt="big light cottage with two floors and strange shape">
+                    </picture>
+                    <p><a href="#">MONTREAL (332 м<sup>2</sup>)</a></p>
+                    <div class="dt2">
+                        <p>Загальна площа будови: 290 м<sup>2</sup></p>
+                        <p>Кількість спалень: 3</p>
+                        <p>Гараж: 2 авто</p>
+                    </div>
+                </div>
+                <div class="project3">
+                    <picture>
+                        <source srcset="img/house3.webp" type="image/webp">
+                        <img src="img/house3.png" alt="big brown cottage with two floors">
+                    </picture>
+                    <p><a href="#">CALGARY (294 м<sup>2</sup>)</a></p>
+                    <div class="dt3">
+                        <p>Загальна площа будови: 272 м<sup>2</sup></p>
+                        <p>Кількість спалень: 3</p>
+                        <p>Гараж: 2 авто</p>
+                    </div>
+                </div>
+                <div class="project4">
+                    <picture>
+                        <source srcset="img/house4.webp" type="image/webp">
+                        <img src="img/house4.png" alt="big grey cottage with big garage">
+                    </picture>
+                    <p><a href="#">RICHMOND (324 м<sup>2</sup>)</a></p>
+                    <div class="dt4">
+                        <p>Загальна площа будови: 242 м<sup>2</sup></p>
+                        <p>Кількість спалень: 3</p>
+                        <p>Гараж: 3 авто</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="wrapper flex_between footer_inside">
@@ -239,5 +278,4 @@
         }
     </script>
 </body>
-
 </html>
