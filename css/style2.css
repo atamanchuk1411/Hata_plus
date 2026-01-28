@@ -79,10 +79,13 @@ tbody tr:hover td{
     background-color: #fd8300;
 }
 
-th{
-    padding: 10rem 0;
+th, td{
+    padding: 10rem 20rem;
     font-size: 14rem;
     line-height: 1.7em;
+}
+
+th{
     color: #fff;
     font-weight: 500;
     font-family: "Roboto Slab";
@@ -91,9 +94,6 @@ th{
 }
 
 td{
-    padding: 10rem 0;
-    font-size: 14rem;
-    line-height: 1.7em;
     color: #666666;
     text-align: center;
     background-color: #e4e4ec;
@@ -375,13 +375,11 @@ footer{
 }
 
 .name{
-    padding-left: 19rem;
     border-left: none;
 }
 
 .price{
     text-align: right;
-    padding-right: 19rem;
     border-right: none;
 }
 
@@ -392,7 +390,6 @@ footer{
 .table_container > h1{
     padding: 40rem 0 22rem;
     font-size: 24rem;
-    line-height: 1em;
     color: #24242b;
 }
 
