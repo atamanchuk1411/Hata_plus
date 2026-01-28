@@ -80,12 +80,12 @@ tbody tr:hover td{
 }
 
 th, td{
-    padding: 10rem 20rem;
     font-size: 14rem;
     line-height: 1.7em;
 }
 
 th{
+    padding: 10rem 20rem;
     color: #fff;
     font-weight: 500;
     font-family: "Roboto Slab";
@@ -94,6 +94,7 @@ th{
 }
 
 td{
+    padding: 15rem 20rem;
     color: #666666;
     text-align: center;
     background-color: #e4e4ec;
