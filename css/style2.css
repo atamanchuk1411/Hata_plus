@@ -109,7 +109,6 @@ footer{
 }
 
 .wrapper{
-    width: 100%;
     max-width: 960rem;
     margin: 0 auto;
     padding: 0 15rem;
@@ -362,13 +361,12 @@ footer{
 }
 
 .table_container{
-    padding: 0 0 34rem 0;
+    padding-bottom:34rem;
     border-bottom: 1rem solid #e4e4ec;
 }
 
 .subtable_container{
     overflow-x: scroll;
-    margin-right: 15rem;
 }
 
 .top{
