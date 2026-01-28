@@ -16,21 +16,23 @@
                         <li class="cancel" id="cancel"><a href="#">x</a></li>
                         <li><a class="grey" href="index.html">Головна</a></li>
                         <li><a class="grey" href="#">Про компанію</a></li>
-                        <li>
-                            <a class="grey our_houses" href="#">Наші будівлі</a>
-                            <ul class="submenu">
-                                <li><a href="#">Таунхауси</a></li>
-                                <li><a href="#">Пентхауси</a></li>
-                                <li><a href="#">Котеджі</a></li>
-                                <li>
-                                    <a href="#">Собачі будки</a>
-                                    <ul class="subsubmenu">
-                                        <li><a href="#">Елітні будки</a></li>
+                        <li class="our_houses">
+                            <a id="btn" class="grey" href="#">Наші будівлі</a>
+                            <ul id="submenu" class="submenu">
+                                <li><a class="arrow br1" href="#">Таунхауси</a></li>
+                                <li><a class="arrow" href="#">Пентхауси</a></li>
+                                <li><a class="arrow" href="#">Котеджі</a></li>
+                                <li class="dog">
+                                    <a id="subbtn" class="arrow br2" href="#">Собачі будки</a>
+                                    <ul id="subsubmenu" class="subsubmenu">
+                                        <li><a class="br1" href="#">Елітні будки</a></li>
                                         <li><a href="#">Для чіхуахуа</a></li>
                                         <li><a href="#">Вольєри</a></li>
-                                        <li><a href="#">Халабуди</a></li>
+                                        <li class="last"><a class="br2" href="#">Халабуди</a></li>
+                                        <li class="cancelsubsub2"><a id="cancelsubsub" href="#">Закрити</a></li>
                                     </ul>
                                 </li>
+                                <li class="cancelsub2"><a id="cancelsub" href="#">Закрити</a></li>
                             </ul>
                         </li>
                         <li><a class="grey" href="#">Акції</a></li>
@@ -279,18 +281,56 @@
     <script>
         burger.onclick = () => {
             menu.style.left = '0'
-            black.style.display = "block"
+            black.style.display = 'block'
         }
 
         black.onclick = () => {
             menu.style.left = '-100%'
-            black.style.display = "none"
+            black.style.display = 'none'
+            submenu.style.display = 'none'
+            subsubmenu.style.display = 'none'
         }
 
         cancel.onclick = (e) => {
             e.preventDefault()
             menu.style.left = '-100%'
-            black.style.display = "none"
+            black.style.display = 'none'
+        }
+
+        function closeMenu(id) {
+            id.style.display = 'none'
+            id.style.position = 'static'
+        }
+
+        function openMenu(id) {
+            id.style.display = 'block'
+            id.style.position = 'fixed'
+            id.style.top = '0'
+            id.style.left = '0'
+            id.style.width = '100%'
+            id.style.zIndex = '2'
+        }
+
+        if(window.innerWidth < 930) {
+            btn.onclick = (e) => {
+                e.preventDefault()
+                openMenu(submenu)
+            }
+
+            subbtn.onclick = (e) => {
+                e.preventDefault()
+                openMenu(subsubmenu)
+            }
+
+            cancelsub.onclick = (e) => {
+                e.preventDefault()
+                closeMenu(submenu)
+            }
+
+            cancelsubsub.onclick = (e) => {
+                e.preventDefault()
+                closeMenu(subsubmenu)
+            }
         }
     </script>
 </body>

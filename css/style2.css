@@ -197,10 +197,87 @@ footer{
     width: 100%;
 }
 
+.submenu > li{
+    position: relative;
+}
+
+.submenu a{
+    font-size: 12rem;
+    letter-spacing: 2rem;
+    line-height: 2em;
+    color: #25252c;
+    background-color: #e3e3eb;
+    transition: 1.5s;
+}
+
+.br1{
+    border-radius: 3rem 3rem 0 0;
+}
+
+.br2{
+    border-radius: 0 0 3rem 3rem;
+}
+
+.arrow:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 9rem;
+    transform: translateY(-50%) rotate(-45deg);
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transition: 1.5s;
+}
+
+.arrow:hover::after{
+    transform: translateY(-5rem) rotate(45deg);
+}
+
 .submenu:before{
     content: "";
     display: block;
     position: absolute;
+    top: -23rem;
+    left: 0;
+    height: 23rem;
+    width: 100%;
+}
+
+.our_houses:hover > .submenu{
+    display: block;
+    top: calc(100% + 23rem);
+    left: -20rem;
+}
+
+.submenu a{
+    min-width: 125rem;
+    padding: 5rem;
+}
+
+.arrow{
+    border-bottom: 1rem solid #cecedd;
+}
+
+.arrow{
+    position: relative;
+}
+
+.dog:hover > .subsubmenu{
+    display: block;
+    top: 0;
+    left: calc(100% + 32rem);
+    padding-left: 5rem;
+}
+
+.subsubmenu a{
+    border-bottom: 1rem solid #cecedd;
+}
+
+.cancelsubsub2 a{
+    border: none;
 }
 
 .social_nav{
@@ -290,7 +367,7 @@ footer{
 
 .subtable_container{
     overflow-x: scroll;
-    margin-right: 28rem;
+    margin-right: 15rem;
 }
 
 .top{
@@ -510,6 +587,16 @@ footer{
     }
 }
 
+@media screen and (min-width: 900px) {
+    table{
+        min-width: 0;
+    }
+
+    .subtable_container{
+        margin-right: 0;
+    }
+}
+
 @media screen and (min-width: 930px) {
     .header_2 > div{
         grid-template-columns: repeat(4, auto);
@@ -532,12 +619,29 @@ footer{
         gap: 27rem;
     }
 
-    .cancel, .black_background, .burger{
+    .cancel, .black_background, .burger, .cancelsub2, .cancelsubsub2{
         display: none;
     }
 
     .list_header li{
         padding: 0;
+    }
+
+    .dog > a{
+        border: none;
+    }
+
+    .submenu a:hover{
+        color: #fff;
+        background-color: #fd8300;
+    }
+
+    .arrow:hover::after{
+        border-color: #fff;
+    }
+
+    .last a{
+        border: none;
     }
 }
 
@@ -550,6 +654,15 @@ footer{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+    }
+
+    .submenu a {
+        text-align: center;
+        padding-bottom: 20rem;
+    }
+
+    .submenu, .subsubmenu{
+        background-color: #e4e4ec;
     }
 }
 

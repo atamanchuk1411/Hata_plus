@@ -177,6 +177,110 @@ aside > ul{
     display: block;
 }
 
+.our_houses{
+    position: relative;
+}
+
+.submenu, .subsubmenu{
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+.br1{
+    border-radius: 3rem 3rem 0 0;
+}
+
+.br2{
+    border-radius: 0 0 3rem 3rem;
+}
+
+.submenu > li{
+    position: relative;
+}
+
+.submenu a{
+    font-size: 12rem;
+    letter-spacing: 2rem;
+    line-height: 2em;
+    color: #25252c;
+    background-color: #e3e3eb;
+    transition: 1.5s;
+}
+
+.submenu a:hover{
+    color: #fff;
+    background-color: #fd8300;
+}
+
+.arrow:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 9rem;
+    transform: translateY(-50%) rotate(-45deg);
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    transition: 1.5s;
+}
+
+.arrow:hover::after{
+    border-color: #fff;
+    transform: translateY(-5rem) rotate(45deg);
+}
+
+.submenu:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -23rem;
+    left: 0;
+    height: 23rem;
+    width: 100%;
+}
+
+.our_houses:hover > .submenu{
+    display: block;
+    top: calc(100% + 23rem);
+    left: -20rem;
+    border-radius: 5rem;
+}
+
+.submenu a{
+    min-width: 125rem;
+    padding: 5rem;
+}
+
+.arrow{
+    border-bottom: 1rem solid #cecedd;
+}
+
+.dog > a{
+    border: none;
+}
+
+.arrow{
+    position: relative;
+}
+
+.dog:hover > .subsubmenu{
+    display: block;
+    top: 0;
+    left: calc(100% + 32rem);
+    padding-left: 5rem;
+}
+
+.subsubmenu a{
+    border-bottom: 1rem solid #cecedd;
+}
+
+.last a{
+    border: none;
+}
+
 .social_nav{
     padding-right: 28rem;
 }
@@ -600,7 +704,7 @@ aside > ul{
         gap: 27rem;
     }
 
-    .cancel, .black_background, .burger{
+    .cancel, .black_background, .burger, .cancelsub2, .cancelsubsub2{
         display: none;
     }
 
