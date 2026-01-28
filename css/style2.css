@@ -85,7 +85,7 @@ th, td{
 }
 
 th{
-    padding: 10rem 20rem;
+    padding: 5rem 20rem;
     color: #fff;
     font-weight: 500;
     font-family: "Roboto Slab";
@@ -94,7 +94,7 @@ th{
 }
 
 td{
-    padding: 15rem 20rem;
+    padding: 13rem 20rem;
     color: #666666;
     text-align: center;
     background-color: #e4e4ec;
