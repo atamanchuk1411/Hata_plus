@@ -448,7 +448,8 @@ footer{
     gap: 28rem;
 }
 
-.project > div{
+.projects > div{
+    width: 100%;
     min-width: 0;
 }
 
@@ -572,7 +573,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 610px) {
+@media screen and (min-width: 630px) {
     .header_2 > div{
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -580,7 +581,9 @@ footer{
         ". logo ."
         "tel social cta";
     }
+}
 
+@media screen and (min-width: 610px) {
     .footer_inside{
         grid-template-columns: repeat(4, auto);
         grid-template-areas:
