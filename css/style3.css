@@ -88,7 +88,8 @@ input, textarea{
 }
 
 textarea{
-    min-height: 105rem;
+    margin-bottom: 10rem;
+    min-height: 87rem;
     color: #9999a6;
 }
 
@@ -356,12 +357,18 @@ footer{
 }
 
 .contacts_container{
+    text-align: center;
     padding-bottom: 34rem;
     border-bottom: 1rem solid #e4e4ec;
 }
 
 .contacts_container p {
     padding-bottom: 12rem;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
 }
 
 .ofice .six {
@@ -391,11 +398,6 @@ footer{
     gap: 28rem;
 }
 
-.map{
-    width: 466rem;
-    height: 299rem;
-}
-
 .form p {
     font-size: 13rem;
     line-height: 1.6em;
@@ -405,10 +407,21 @@ footer{
     width: 100%;
 }
 
+.topic{
+    margin-bottom: 10rem;
+}
+
 .nt{
-    display: flex;
-    flex-direction: row;
+    padding-bottom: 10rem;
     gap: 10rem;
+}
+
+.button{
+    gap: 30rem;
+}
+
+.button p{
+    padding-top: 12rem;
 }
 
 .submit{
@@ -519,6 +532,11 @@ footer{
 }
 
 @media screen and (min-width: 610px) {
+    .contacts_container{
+        display: flex;
+        justify-content: space-between;
+    }
+
     .footer_inside{
         grid-template-columns: repeat(4, auto);
         grid-template-areas:
@@ -572,6 +590,11 @@ footer{
     .last a{
         border: none;
     }
+
+    .map{
+        width: 466rem;
+        height: 299rem;
+    }
 }
 
 @media screen and (max-width: 930px) {
@@ -579,6 +602,15 @@ footer{
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
+    }
+
+    .veb_forms{
+        flex-direction: column;
+    }
+
+    .map{
+        width: 100%;
+        height: 100%;
     }
 
     .submenu a {
