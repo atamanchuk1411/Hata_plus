@@ -135,28 +135,30 @@
                 <p class="six">Св.№59904423</p>
             </div>
         </div>
-        <div class="veb_forms">
-            <picture>
-                <source srcset="img/Vostovtsi.webp" type="image/webp">
-                <img class="map" src="img/Vostovtsi2.png" alt="map of the village of Vstovtsi">
-            </picture>
+        <form class="veb_forms">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1YBfzDB39vldEMuTV4yxWlRrtaNgyU_o&ehbc=2E312F" width="640" height="480"></iframe>
+            </div>
             <div class="form">
                 <h2>Форма зворотнього зв’язку</h2>
                 <div class="nt flex_between">
-                    <input class="width" type="text" placeholder="Ваше ім'я">
-                    <input class="width" type="text" placeholder="Телефон">
+                    <input type="text" placeholder="Ваше ім'я" name="name">
+                    <input type="text" placeholder="Телефон" name="phone_number">
                 </div>
-                <input class="width topic" type="text" placeholder="Тема повідомлення">
-                <textarea class="width" placeholder="Текст"></textarea>
+                <input class="width topic" type="text" placeholder="Тема повідомлення" name="topic_of_message">
+                <textarea placeholder="Текст" name="comment"></textarea>
                 <div class="flex_between button">
-                    <input class="submit" type="submit" value="Відправити">
-                    <p class="six">
-                        <input type="checkbox" id="checkbox">
-                        <label for="checkbox">Я бажаю отримувати останні новини</label>
-                    </p>
+                    <button class="submit" type="submit">Відправити</button>
+                    <label class="six">
+                        <span class="parent">
+                            <input type="checkbox" checked>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 -960 960 960" width="15px" fill="#1f1f1f"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
+                        </span>
+                        Я бажаю отримувати останні новини
+                    </label>
                 </div>
             </div>
-        </div>
+        </form>
     </main>
     <footer>
         <div class="wrapper flex_between footer_inside">

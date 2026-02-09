@@ -82,19 +82,33 @@ h2{
 
 input, textarea{
     padding: 8rem 15rem;
+    width: 100%;
     font-style: italic;
     font-size: 13rem;
     line-height: 1.6em;
 }
 
-textarea{
+textarea {
     margin-bottom: 10rem;
     min-height: 87rem;
-    color: #9999a6;
 }
 
-label{
-    padding-left: 5rem;
+label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+    font-size: 13rem;
+    line-height: 1.6em;
+}
+
+iframe{
+    position: absolute;
+    top: -72rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 footer{
@@ -362,13 +376,24 @@ footer{
     border-bottom: 1rem solid #e4e4ec;
 }
 
+.contacts_container div {
+    padding-bottom: 15rem;
+}
+
 .contacts_container p {
     padding-bottom: 12rem;
 }
 
 .map{
     width: 100%;
-    height: 100%;
+    height: 299rem;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 72rem;
+}
+
+.ofice{
+    grid-area: ofice;
 }
 
 .ofice .six {
@@ -381,12 +406,20 @@ footer{
     line-height: 1.5em;
 }
 
+.consultation{
+    grid-area: consultation;
+}
+
 .consultation .six {
     font-size: 14rem;
     line-height: 1.5em;
 }
 
-.details p{
+.details{
+    grid-area: details;
+}
+
+.details p {
     font-size: 14rem;
     line-height: 1.5em;
 }
@@ -403,11 +436,7 @@ footer{
     line-height: 1.6em;
 }
 
-.width{
-    width: 100%;
-}
-
-.topic{
+.topic {
     margin-bottom: 10rem;
 }
 
@@ -416,15 +445,11 @@ footer{
     gap: 10rem;
 }
 
-.button{
+.button {
     gap: 30rem;
 }
 
-.button p{
-    padding-top: 12rem;
-}
-
-.submit{
+.submit {
     padding: 9rem 30rem;
     font-size: 14rem;
     line-height: 1.7em;
@@ -433,6 +458,35 @@ footer{
     border: none;
     border-radius: 30rem;
     background-color: #fd8300;
+}
+
+.parent{
+    position: relative;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+}
+
+.parent input{
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    width: 15px;
+    height: 15px;
+    border: 1rem solid #c5c5d4;
+    border-radius: 3rem;
+}
+
+.parent svg{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:checked + svg{
+    display: block;
 }
 
 .list_footer{
@@ -519,6 +573,14 @@ footer{
         ". list1 ."
         "social2 list2 tel2";
     }
+
+    .contacts_container{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-areas: 
+        "ofice consultation"
+        "details details";
+    }
 }
 
 @media screen and (min-width: 660px) {
@@ -529,15 +591,18 @@ footer{
         ". logo ."
         "tel social cta";
     }
+
+    .contacts_container{
+        padding-bottom: 0;
+        text-align: left;
+        grid-template-columns: repeat(3, auto);
+        grid-template-areas: 
+        "ofice consultation details";
+    }
 }
 
 @media screen and (min-width: 610px) {
-    .contacts_container{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .footer_inside{
+    .footer_inside {
         grid-template-columns: repeat(4, auto);
         grid-template-areas:
         "list1 list2 tel2 social2";
@@ -578,6 +643,11 @@ footer{
         border: none;
     }
 
+    .map{
+        width: 466rem;
+        height: 299rem;
+    }
+
     .submenu a:hover{
         color: #fff;
         background-color: #fd8300;
@@ -587,30 +657,20 @@ footer{
         border-color: #fff;
     }
 
-    .last a{
+    .last a {
         border: none;
-    }
-
-    .map{
-        width: 466rem;
-        height: 299rem;
     }
 }
 
 @media screen and (max-width: 930px) {
-    header > div{
+    header > div {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
 
-    .veb_forms{
+    .veb_forms {
         flex-direction: column;
-    }
-
-    .map{
-        width: 100%;
-        height: 100%;
     }
 
     .submenu a {
