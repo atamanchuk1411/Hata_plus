@@ -86,6 +86,7 @@ input, textarea{
     font-style: italic;
     font-size: 13rem;
     line-height: 1.6em;
+    box-sizing: border-box;
 }
 
 textarea {
