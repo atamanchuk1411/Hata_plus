@@ -73,11 +73,17 @@ h1{
 }
 
 h2{
-    padding-bottom: 20rem;
+    padding-bottom: 13rem;
     font-size: 14rem;
     line-height: 1.7em;
     color: #24242b;
     font-family: "Roboto Slab";
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
 }
 
 input, textarea{
@@ -86,11 +92,12 @@ input, textarea{
     font-style: italic;
     font-size: 13rem;
     line-height: 1.6em;
+    border-radius: 3px;
+    border: 1px solid #c5c5d4;
     box-sizing: border-box;
 }
 
 textarea {
-    margin-bottom: 10rem;
     min-height: 87rem;
 }
 
@@ -382,7 +389,7 @@ footer{
 }
 
 .contacts_container p {
-    padding-bottom: 12rem;
+    padding-bottom: 6rem;
 }
 
 .map{
@@ -437,12 +444,7 @@ footer{
     line-height: 1.6em;
 }
 
-.topic {
-    margin-bottom: 10rem;
-}
-
 .nt{
-    padding-bottom: 10rem;
     gap: 10rem;
 }
 
