@@ -74,8 +74,8 @@ h1{
 
 h2{
     padding-bottom: 13rem;
-    font-size: 14rem;
-    line-height: 1.7em;
+    font-size: 18rem;
+    line-height: 1.3em;
     color: #24242b;
     font-family: "Roboto Slab";
 }
@@ -95,27 +95,22 @@ input, textarea{
     border-radius: 3px;
     border: 1px solid #c5c5d4;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 textarea {
     min-height: 87rem;
-}
-
-label {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10rem;
-    font-size: 13rem;
-    line-height: 1.6em;
+    max-height: 200rem;
+    font-family: Arial;
+    resize: vertical;
 }
 
 iframe{
     position: absolute;
-    top: -72rem;
+    top: -72px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% + 72px);
     border: none;
 }
 
@@ -380,7 +375,6 @@ footer{
 
 .contacts_container{
     text-align: center;
-    padding-bottom: 34rem;
     border-bottom: 1rem solid #e4e4ec;
 }
 
@@ -388,16 +382,15 @@ footer{
     padding-bottom: 15rem;
 }
 
-.contacts_container p {
+.ofice p, .consultation p, .details .six {
     padding-bottom: 6rem;
 }
 
-.map{
-    width: 100%;
-    height: 299rem;
+.map {
     overflow: hidden;
     position: relative;
-    padding-bottom: 72rem;
+    width: 100%;
+    min-height: 299rem;
 }
 
 .ofice{
@@ -432,9 +425,14 @@ footer{
     line-height: 1.5em;
 }
 
+.padding {
+    padding-bottom: 15rem;
+    color: #666666;
+}
+
 .veb_forms{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding-top: 36rem;
     gap: 28rem;
 }
@@ -442,6 +440,10 @@ footer{
 .form p {
     font-size: 13rem;
     line-height: 1.6em;
+}
+
+.form h2 {
+    padding-bottom: 22rem;
 }
 
 .nt{
@@ -458,9 +460,30 @@ footer{
     line-height: 1.7em;
     color: #ffffff;
     font-weight: bold;
-    border: none;
+    border: 1rem solid #fd8300;
     border-radius: 30rem;
     background-color: #fd8300;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.submit:hover {
+    color: #fd8300;
+    background-color: #fff;
+}
+
+.width {
+    width: 100%;
+}
+
+.label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10rem;
+    font-size: 13rem;
+    line-height: 1.6em;
+    cursor: pointer;
 }
 
 .parent{
@@ -476,8 +499,8 @@ footer{
     padding: 0;
     width: 15px;
     height: 15px;
-    border: 1rem solid #c5c5d4;
-    border-radius: 3rem;
+    border: 1px solid #c5c5d4;
+    border-radius: 3px;
 }
 
 .parent svg{
@@ -551,10 +574,6 @@ input:checked + svg{
     grid-area: social2;
 }
 
-.tf, .sf{
-    padding-right: 28rem;
-}
-
 @media screen and (min-width: 370px) {
     .footer_inside{
         display: grid;
@@ -578,11 +597,27 @@ input:checked + svg{
     }
 
     .contacts_container{
+        gap: 15rem;
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-areas: 
         "ofice consultation"
         "details details";
+    }
+}
+
+@media screen and (max-width: 660px) {
+    h1 {
+        padding-bottom: 30rem;
+        text-align: center;
+    }
+
+    .button {
+        flex-direction: column;
+    }
+
+    .submit {
+        width: 100%;
     }
 }
 
@@ -596,7 +631,7 @@ input:checked + svg{
     }
 
     .contacts_container{
-        padding-bottom: 0;
+        padding-bottom: 22rem;
         text-align: left;
         grid-template-columns: repeat(3, auto);
         grid-template-areas: 
@@ -646,11 +681,6 @@ input:checked + svg{
         border: none;
     }
 
-    .map{
-        width: 466rem;
-        height: 299rem;
-    }
-
     .submenu a:hover{
         color: #fff;
         background-color: #fd8300;
@@ -673,7 +703,8 @@ input:checked + svg{
     }
 
     .veb_forms {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .submenu a {
