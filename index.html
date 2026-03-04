@@ -10,6 +10,15 @@
 
 <body>
     <div class="black_background" id="black"></div>
+    <div class="popup" id="popup">
+        <form action="index.php" method="post">
+            <h2>Замовити дзвінок</h2>
+            <label><input type="text" name="name" placeholder="Ваше ім'я"></label>
+            <label><input type="tel" name="phone" placeholder="Телефон"></label>
+            <button type="submit">Відправити</button>
+        </form>
+        <a class="cancel_popup" id="cancel_popup">x</a>
+    </div>
     <header>
         <div class="wrapper">
             <div class="flex_between">
@@ -108,7 +117,7 @@
                 </div>
             </div>
             <p class="cta_container black">
-                <a href="#" class="cta black">Замовити дзвінок</a>
+                <a href="#" class="cta black" id="open_popup">Замовити дзвінок</a>
             </p>
         </div>
     </div>

@@ -51,3 +51,15 @@ if(window.innerWidth < 930) {
         closeMenu(subsubmenu)
     }
 }
+
+open_popup.onclick = (e) => {
+    e.preventDefault()
+    black.classList.add('d-block')
+    popup.classList.add('d-block')
+}
+
+cancel_popup.onclick = (e) => {
+    e.preventDefault()
+    black.classList.remove('d-block')
+    popup.classList.remove('d-block')
+}
