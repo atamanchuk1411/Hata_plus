@@ -160,6 +160,7 @@ footer{
     top: 50%;
     left: 50%;
     background-color: #fff;
+    border-radius: 5px;
     transform: translate(-50%, -50%);
     z-index: 2;
 }
@@ -190,6 +191,10 @@ footer{
     position: absolute;
     top: 10rem;
     right: 10rem;
+}
+
+.d-block {
+    display: block;
 }
 
 .nav_header{
@@ -712,6 +717,10 @@ input:checked + svg{
 
     .cancel, .black_background, .burger, .cancelsub2, .cancelsubsub2{
         display: none;
+    }
+
+    .d-block {
+        display: block;
     }
 
     .list_header li{

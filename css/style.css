@@ -169,6 +169,10 @@ aside > ul{
     right: 10rem;
 }
 
+.d-block {
+    display: block;
+}
+
 .nav_header{
     font-size: 14rem;
     letter-spacing: 2rem;
