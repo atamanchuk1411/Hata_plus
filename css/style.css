@@ -53,6 +53,12 @@ body{
     position: relative;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -72,6 +78,12 @@ h1{
     font-size: 30rem;
     padding-bottom: 17rem;
     color: #24242b;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 15rem;
+    width: 100%;
 }
 
 li{
@@ -142,6 +154,7 @@ aside > ul{
 }
 
 .popup h2 {
+    font-size: 24rem;
     padding-bottom: 10rem;
 }
 
@@ -749,6 +762,10 @@ aside > ul{
 
     .cancel, .black_background, .burger, .cancelsub2, .cancelsubsub2{
         display: none;
+    }
+
+    .d-block {
+        display: block;
     }
 
     .list_header li{

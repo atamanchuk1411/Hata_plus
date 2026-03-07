@@ -49,6 +49,18 @@ body{
     position: relative;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+input {
+    box-sizing: border-box;
+    padding: 15rem;
+    width: 100%;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -153,6 +165,7 @@ footer{
 }
 
 .popup h2 {
+    font-size: 24rem;
     padding-bottom: 10rem;
 }
 
@@ -668,6 +681,10 @@ footer{
 
     .cancel, .black_background, .burger, .cancelsub2, .cancelsubsub2{
         display: none;
+    }
+
+    .d-block {
+        display: block;
     }
 
     .list_header li{

@@ -63,3 +63,9 @@ cancel_popup.onclick = (e) => {
     black.classList.remove('d-block')
     popup.classList.remove('d-block')
 }
+
+black.onclick = (e) => {
+    e.preventDefault()
+    black.classList.remove('d-block')
+    popup.classList.remove('d-block')
+}
