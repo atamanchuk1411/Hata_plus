@@ -68,4 +68,32 @@ black.onclick = (e) => {
     e.preventDefault()
     black.classList.remove('d-block')
     popup.classList.remove('d-block')
+    house1.classList.remove('position')
+    house2.classList.remove('position')
+    house3.classList.remove('position')
+    house4.classList.remove('position')
+}
+
+house1.onclick = (e) => {
+    e.preventDefault()
+    black.classList.add('d-block')
+    house1.classList.add('position')
+}
+
+house2.onclick = (e) => {
+    e.preventDefault()
+    black.classList.add('d-block')
+    house2.classList.add('position')
+}
+
+house3.onclick = (e) => {
+    e.preventDefault()
+    black.classList.add('d-block')
+    house3.classList.add('position')
+}
+
+house4.onclick = (e) => {
+    e.preventDefault()
+    black.classList.add('d-block')
+    house4.classList.add('position')
 }

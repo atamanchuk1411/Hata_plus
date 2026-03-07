@@ -529,6 +529,14 @@ aside > ul{
     width: 100%;
 }
 
+.position {
+    position: fixed;
+    top: 40%;
+    right: 43%;
+    transform: scale(2);
+    z-index: 3;
+}
+
 .dt1 p, .dt2 p, .dt3 p{
     font-size: 13rem;
     line-height: 1.4em;
