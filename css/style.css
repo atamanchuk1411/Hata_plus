@@ -102,6 +102,37 @@ aside > ul{
     color: #25252c;
 }
 
+main.send {
+    padding: 30rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.send > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+}
+
+.send p {
+    font-size: 18rem;
+}
+
+.info div {
+    display: flex;
+    flex-direction: column;
+    gap: 20rem;
+}
+
+.form_return {
+    padding: 110rem 25rem;
+    font-size: 20rem;
+    color: #000;
+    border-radius: 50%;
+    border: 4rem solid #fd8300;
+}
+
 .wrapper{
     max-width: 960rem;
     margin: 0 auto;
